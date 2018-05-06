@@ -7,21 +7,25 @@
 * react-native-cli
 * flow
 
-### on Mac OS
+### Mac OS でのセットアップ
 
-Homebrew で、以下の依存関係をインストールしてください。
+プロジェクトルートにて以下を実行する
 
 ```
 $ brew install node
 $ brew install yarn
 $ brew install flow
 $ npm install -g react-native-cli
+$ yarn
 ```
 
 ## コマンド
 
 ```
 $ yarn start         # start react native app server
+$ yarn ios           # run on iOS simulator
+$ yarn android       # run on Android simulator
+$ yarn web           # run on local webpack server
 $ yarn test          # run snapshot test
 $ yarn test:update   # update snapshot test
 $ yarn eslint        # run eslint
