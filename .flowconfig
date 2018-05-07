@@ -19,6 +19,9 @@
 ; Ignore metro
 .*/node_modules/metro/.*
 
+; Ignore React Native for Web
+.*/node_modules/react-native-web/.*
+
 [include]
 
 [libs]
