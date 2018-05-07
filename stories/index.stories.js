@@ -4,6 +4,8 @@ import { storiesOf } from "@storybook/react";
 import { action } from "@storybook/addon-actions";
 import { linkTo } from "@storybook/addon-links";
 
-import App from "../src/App";
+import { HomeScreen, DetailsScreen } from "../src/screens";
 
-storiesOf("App", module).add("default", () => <App />);
+storiesOf("screens", module)
+  .add("HomeScreen", () => <HomeScreen />)
+  .add("DetailsScreen", () => <DetailsScreen />);

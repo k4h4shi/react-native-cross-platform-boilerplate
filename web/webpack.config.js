@@ -27,7 +27,11 @@ const babelLoaderConfiguration = {
   include: [
     path.resolve(appDirectory, "index.web.js"),
     path.resolve(appDirectory, "src"),
-    path.resolve(appDirectory, "node_modules/react-native-uncompiled")
+    path.resolve(appDirectory, "node_modules/react-native"),
+    path.resolve(appDirectory, "node_modules/react-native-uncompiled"),
+    path.resolve(appDirectory, "node_modules/react-navigation"),
+    path.resolve(appDirectory, "node_modules/react-native-tab-view"),
+    path.resolve(appDirectory, "node_modules/react-native-safe-area-view")
   ],
   use: {
     loader: "babel-loader",
@@ -57,7 +61,7 @@ const imageLoaderConfiguration = {
 module.exports = {
   devServer,
   // your web-specific entry file
-  entry: path.resolve(appDirectory, "index.web.js"),
+  entry: ["babel-polyfill", path.resolve(appDirectory, "index.web.js")],
 
   // configures where the build ends up
   output: {
