@@ -35,6 +35,7 @@ $ yarn flow:start    # start flow server
 $ yarn flow:start    # stop flow server
 $ yarn flow:start    # check flow status
 $ yarn flow:coverage # check flow coverage
+$ yarn storybook     # run storybook
 ```
 
 ## デプロイ

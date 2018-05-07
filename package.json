@@ -6,8 +6,7 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "ios": "react-native run-ios",
     "android": "react-native run-android",
-    "web":
-      "webpack-dev-server -d --config ./web/webpack.config.js --inline --hot --colors",
+    "web": "webpack-dev-server -d --config ./web/webpack.config.js --inline --hot --colors",
     "web:build": "webpack -p --config ./web/webpack.config.js",
     "test": "jest",
     "test:update": "jest -u",
@@ -16,7 +15,9 @@
     "flow:start": "flow start",
     "flow:stop": "flow stop",
     "flow:status": "flow status",
-    "flow:coverage": "flow coverage"
+    "flow:coverage": "flow coverage",
+    "storybook": "start-storybook -p 6006",
+    "build-storybook": "build-storybook"
   },
   "dependencies": {
     "react": "^16.3.2",
@@ -25,12 +26,18 @@
     "react-native-web": "^0.6.1"
   },
   "devDependencies": {
+    "@storybook/addon-actions": "^3.4.3",
+    "@storybook/addon-links": "^3.4.3",
+    "@storybook/addons": "^3.4.3",
+    "@storybook/react": "^3.4.3",
+    "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.3",
     "babel-jest": "22.4.3",
     "babel-loader": "^7.1.4",
     "babel-plugin-react-native-web": "^0.6.1",
     "babel-preset-flow": "^6.23.0",
     "babel-preset-react-native": "4.0.0",
+    "babel-runtime": "^6.26.0",
     "eslint": "^4.19.1",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.11.0",
@@ -40,6 +47,7 @@
     "flow-bin": "^0.67.1",
     "jest": "22.4.3",
     "prettier": "^1.12.1",
+    "react-art": "^16.3.2",
     "react-test-renderer": "16.3.1",
     "url-loader": "^1.0.1",
     "webpack": "^4.7.0",
