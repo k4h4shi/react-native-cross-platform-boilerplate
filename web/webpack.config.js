@@ -5,6 +5,17 @@ const webpack = require("webpack");
 
 const appDirectory = path.resolve(__dirname, "../");
 
+const devServer = {
+  contentBase: path.join(appDirectory, "web/dist"),
+  // enable HMR
+  hot: true,
+  // embed the webpack-dev-server runtime into the bundle
+  inline: true,
+  // serve index.html in place of 404 responses to allow HTML5 history
+  historyApiFallback: true,
+  port: 3000
+};
+
 // This is needed for webpack to compile JavaScript.
 // Many OSS React Native packages are not compiled to ES5 before being
 // published. If you depend on uncompiled packages they may cause webpack build
@@ -44,13 +55,14 @@ const imageLoaderConfiguration = {
 };
 
 module.exports = {
+  devServer,
   // your web-specific entry file
   entry: path.resolve(appDirectory, "index.web.js"),
 
   // configures where the build ends up
   output: {
-    filename: "bundle.web.js",
-    path: path.resolve(appDirectory, "dist")
+    filename: "bundle.js",
+    path: path.resolve(appDirectory, "web/dist")
   },
 
   // ...the rest of your config

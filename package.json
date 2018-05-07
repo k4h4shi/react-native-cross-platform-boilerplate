@@ -7,7 +7,8 @@
     "ios": "react-native run-ios",
     "android": "react-native run-android",
     "web":
-      "./node_modules/.bin/webpack-dev-server -d --config ./web/webpack.config.js --inline --hot --colors",
+      "webpack-dev-server -d --config ./web/webpack.config.js --inline --hot --colors",
+    "web:build": "webpack -p --config ./web/webpack.config.js",
     "test": "jest",
     "test:update": "jest -u",
     "eslint": "eslint .",

@@ -26,6 +26,7 @@ $ yarn start         # start react native app server
 $ yarn ios           # run on iOS simulator
 $ yarn android       # run on Android simulator
 $ yarn web           # run on local webpack server
+$ yarn web:build     # create production build for web
 $ yarn test          # run snapshot test
 $ yarn test:update   # update snapshot test
 $ yarn eslint        # run eslint
@@ -35,3 +36,9 @@ $ yarn flow:start    # stop flow server
 $ yarn flow:start    # check flow status
 $ yarn flow:coverage # check flow coverage
 ```
+
+## デプロイ
+
+### Web
+
+`$ yarn web:build`を実行後、`web/dist`以下をサーバーに配置する
