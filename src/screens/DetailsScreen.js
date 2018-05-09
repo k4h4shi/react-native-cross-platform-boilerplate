@@ -1,6 +1,7 @@
 // @flow
 import React, { Component } from "react";
-import { View, Text, Button } from "react-native";
+import { View, Text } from "react-native";
+import { CenteringView } from "../components";
 
 type Props = {
   navigation: {
@@ -11,9 +12,9 @@ type Props = {
 export default class DetailsScreen extends Component<Props> {
   render() {
     return (
-      <View style={{ flex: 1, alignItems: "center", justifyContent: "center" }}>
+      <CenteringView>
         <Text>Details Screen</Text>
-      </View>
+      </CenteringView>
     );
   }
 }
