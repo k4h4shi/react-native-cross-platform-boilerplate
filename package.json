@@ -6,7 +6,9 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "ios": "react-native run-ios",
     "android": "react-native run-android",
-    "web": "webpack-dev-server -d --config ./web/webpack.config.js --inline --hot --colors",
+    "api-mock": "node api-mock/index.js",
+    "web":
+      "webpack-dev-server -d --config ./web/webpack.config.js --inline --hot --colors",
     "web:build": "webpack -p --config ./web/webpack.config.js",
     "test": "jest",
     "test:update": "jest -u",
@@ -21,11 +23,14 @@
   },
   "dependencies": {
     "babel-polyfill": "^6.26.0",
+    "camelize": "^1.0.0",
+    "query-string": "^6.1.0",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-native": "0.55.3",
     "react-native-web": "^0.6.1",
-    "react-navigation": "^2.0.0-rc.9"
+    "react-navigation": "^2.0.0-rc.9",
+    "snakeize": "^0.1.0"
   },
   "devDependencies": {
     "@storybook/addon-actions": "^3.4.3",
@@ -48,6 +53,7 @@
     "eslint-plugin-react": "^7.7.0",
     "flow-bin": "^0.67.1",
     "jest": "22.4.3",
+    "json-server": "^0.12.2",
     "prettier": "^1.12.1",
     "react-art": "^16.3.2",
     "react-test-renderer": "16.3.1",

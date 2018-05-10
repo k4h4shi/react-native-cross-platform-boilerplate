@@ -4,7 +4,7 @@ import { StyleSheet, TouchableOpacity, Text } from "react-native";
 
 type Props = {
   title: string,
-  onPress: () => {}
+  onPress: () => void
 };
 
 export default ({ title, onPress }: Props) => (

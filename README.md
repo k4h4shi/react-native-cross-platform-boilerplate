@@ -7,6 +7,20 @@
 * react-native-cli
 * flow
 
+## 依存ライブラリ
+
+* [React](https://reactjs.org/)
+* [React Native](https://facebook.github.io/react-native/)
+* [React Navigation](https://reactnavigation.org/docs/en/navigation-prop.html)
+* [Flow](https://flow.org/)
+* [Jest](https://facebook.github.io/jest/)
+
+## 開発ツール
+
+* [Storybook](https://storybook.js.org/)
+* [Prettier](https://prettier.io/)
+* [ESLint](https://eslint.org/)
+
 ### Mac OS でのセットアップ
 
 プロジェクトルートにて以下を実行する
@@ -27,8 +41,9 @@ $ yarn ios           # run on iOS simulator
 $ yarn android       # run on Android simulator
 $ yarn web           # run on local webpack server
 $ yarn web:build     # create production build for web
-$ yarn test          # run snapshot test
-$ yarn test:update   # update snapshot test
+$ yarn api-mock      # run api-mock server
+$ yarn test          # run snapshot test with Jest
+$ yarn test:update   # update snapshot test with Jest
 $ yarn eslint        # run eslint
 $ yarn eslint:fix    # run eslint and fix error
 $ yarn flow:start    # start flow server

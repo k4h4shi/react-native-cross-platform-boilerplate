@@ -1,15 +1,15 @@
 // @flow
 import { StackNavigator } from "react-navigation";
 import HomeScreen from "../screens/HomeScreen";
-import DetailsScreen from "../screens/DetailsScreen";
+import SamplesScreen from "../screens/SamplesScreen";
 
 const RootStack = StackNavigator(
   {
     Home: {
       screen: HomeScreen
     },
-    Details: {
-      screen: DetailsScreen
+    Samples: {
+      screen: SamplesScreen
     }
   },
   {
