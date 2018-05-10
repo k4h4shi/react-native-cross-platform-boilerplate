@@ -6,8 +6,9 @@
     "start": "node node_modules/react-native/local-cli/cli.js start",
     "ios": "react-native run-ios",
     "android": "react-native run-android",
-    "api-mock": "node api-mock/index.js",
-    "web": "webpack-dev-server -d --config ./web/webpack.config.js --inline --hot --colors",
+    "mock-server": "node tools/mock-server/index.js",
+    "web":
+      "webpack-dev-server -d --config ./web/webpack.config.js --inline --hot --colors",
     "web:build": "webpack -p --config ./web/webpack.config.js",
     "test": "jest",
     "test:update": "jest -u",

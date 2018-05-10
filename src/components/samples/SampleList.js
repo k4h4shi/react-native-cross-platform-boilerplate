@@ -10,7 +10,7 @@ type Props = {|
   }>
 |};
 
-export default ({ samples }: Props) =>
+const SampleList = ({ samples }: Props) =>
   samples.map(sample => (
     <View style={styles.container} key={sample.id}>
       <Text>id: {sample.id}</Text>
@@ -29,3 +29,5 @@ const styles = StyleSheet.create({
     padding: 6
   }
 });
+
+export default SampleList;

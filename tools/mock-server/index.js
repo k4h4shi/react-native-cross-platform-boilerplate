@@ -1,6 +1,7 @@
+const data = require("../data");
 const jsonServer = require("json-server");
 const server = jsonServer.create();
-const router = jsonServer.router("./api-mock/db.json");
+const router = jsonServer.router(data);
 const middlewares = jsonServer.defaults();
 
 server.use(middlewares);

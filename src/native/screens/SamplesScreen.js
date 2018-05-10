@@ -1,8 +1,6 @@
 // @flow
 import React, { Component } from "react";
-import { View, Text } from "react-native";
-import { CenteringView } from "../../components/common";
-import { SampleList } from "../../components/sample";
+import { Samples } from "../../components/samples";
 import * as SampleApi from "../../apis/SampleApi";
 
 type State = {
@@ -28,10 +26,6 @@ export default class SamplesScreen extends Component<Props, State> {
 
   render() {
     const { samples } = this.state;
-    return (
-      <CenteringView>
-        <SampleList samples={samples} />
-      </CenteringView>
-    );
+    return <Samples samples={samples} />;
   }
 }
