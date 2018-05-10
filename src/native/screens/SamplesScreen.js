@@ -1,9 +1,9 @@
 // @flow
 import React, { Component } from "react";
 import { View, Text } from "react-native";
-import { CenteringView } from "../components/common";
-import { SampleList } from "../components/sample";
-import * as SampleApi from "../apis/SampleApi";
+import { CenteringView } from "../../components/common";
+import { SampleList } from "../../components/sample";
+import * as SampleApi from "../../apis/SampleApi";
 
 type State = {
   samples: Array<SampleApi.Model>

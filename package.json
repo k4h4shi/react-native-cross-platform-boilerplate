@@ -7,8 +7,7 @@
     "ios": "react-native run-ios",
     "android": "react-native run-android",
     "api-mock": "node api-mock/index.js",
-    "web":
-      "webpack-dev-server -d --config ./web/webpack.config.js --inline --hot --colors",
+    "web": "webpack-dev-server -d --config ./web/webpack.config.js --inline --hot --colors",
     "web:build": "webpack -p --config ./web/webpack.config.js",
     "test": "jest",
     "test:update": "jest -u",

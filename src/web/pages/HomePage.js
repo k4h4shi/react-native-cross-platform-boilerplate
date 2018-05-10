@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from "react";
 import { Text } from "react-native";
-import { Button, CenteringView } from "../components/common";
+import { Button, CenteringView } from "../../components/common";
 
 type Props = {
   navigation: {
@@ -9,15 +9,12 @@ type Props = {
   }
 };
 
-export default class HomeScreen extends Component<Props> {
+export default class HomePage extends Component<Props> {
   render() {
     return (
       <CenteringView>
         <Text>Home Screen</Text>
-        <Button
-          title="Show samples"
-          onPress={() => this.props.navigation.navigate("Samples")}
-        />
+        <Button title="Show samples" onPress={() => {}} />
       </CenteringView>
     );
   }
