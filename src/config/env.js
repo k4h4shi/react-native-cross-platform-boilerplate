@@ -1,6 +1,6 @@
 const ENV = {
   dev: {
-    API_BASE_URI: "http://localhost:8081/api/"
+    API_BASE_URI: "http://localhost:8081/api"
   },
   prod: {
     // TBD
