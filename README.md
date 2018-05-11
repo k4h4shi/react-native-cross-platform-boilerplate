@@ -42,7 +42,7 @@ $ yarn ios           # run on iOS simulator
 $ yarn android       # run on Android simulator
 $ yarn web           # run on local webpack server
 $ yarn web:build     # create production build for web
-$ yarn api-mock      # run api-mock server
+$ yarn mock-server   # run api-mock server
 $ yarn test          # run snapshot test with Jest
 $ yarn test:update   # update snapshot test with Jest
 $ yarn eslint        # run eslint
