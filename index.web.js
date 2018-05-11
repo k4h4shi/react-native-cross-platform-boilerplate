@@ -1,5 +1,5 @@
 import { AppRegistry } from "react-native";
-import App from "./src/web/App";
+import App from "./src/App";
 
 AppRegistry.registerComponent("ReactNativeCrossPlatformBoilerplate", () => App);
 

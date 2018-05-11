@@ -1,7 +1,7 @@
 // @flow
 import React, { Component } from "react";
 import { Text } from "react-native";
-import { Button, CenteringView } from "../../components/common";
+import { Button, CenteringView } from "../components/common";
 
 type Props = {};
 

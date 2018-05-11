@@ -14,6 +14,7 @@
 * [React Navigation](https://reactnavigation.org/docs/en/navigation-prop.html)
 * [Flow](https://flow.org/)
 * [Jest](https://facebook.github.io/jest/)
+* [styled components](https://www.styled-components.com/)
 
 ## 開発ツール
 

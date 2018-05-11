@@ -31,7 +31,8 @@ const babelLoaderConfiguration = {
     path.resolve(appDirectory, "node_modules/react-native-uncompiled"),
     path.resolve(appDirectory, "node_modules/react-navigation"),
     path.resolve(appDirectory, "node_modules/react-native-tab-view"),
-    path.resolve(appDirectory, "node_modules/react-native-safe-area-view")
+    path.resolve(appDirectory, "node_modules/react-native-safe-area-view"),
+    path.resolve(appDirectory, "node_modules/react-router-native")
   ],
   use: {
     loader: "babel-loader",
