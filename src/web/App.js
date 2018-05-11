@@ -1,5 +1,5 @@
 // @flow
 
-import HomePage from "./pages/HomePage";
+import Routes from "./Routes";
 
-export default HomePage;
+export default Routes;

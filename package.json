@@ -7,8 +7,7 @@
     "ios": "react-native run-ios",
     "android": "react-native run-android",
     "mock-server": "node tools/mock-server/index.js",
-    "web":
-      "webpack-dev-server -d --config ./web/webpack.config.js --inline --hot --colors",
+    "web": "webpack-dev-server -d --config ./web/webpack.config.js --inline --hot --colors",
     "web:build": "webpack -p --config ./web/webpack.config.js",
     "test": "jest",
     "test:update": "jest -u",
@@ -30,6 +29,7 @@
     "react-native": "0.55.3",
     "react-native-web": "^0.6.1",
     "react-navigation": "^2.0.0-rc.9",
+    "react-router-dom": "^4.2.2",
     "snakeize": "^0.1.0"
   },
   "devDependencies": {
