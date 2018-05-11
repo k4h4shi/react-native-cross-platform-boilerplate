@@ -1,17 +1,15 @@
 // @flow
 import React, { Component } from "react";
-import { StyleSheet, View } from "react-native";
+import styled from "styled-components/primitives";
 
 type Props = { children: {} };
 
 export default ({ children }: Props) => (
-  <View style={styles.centering}>{children}</View>
+  <CenteringView>{children}</CenteringView>
 );
 
-const styles = StyleSheet.create({
-  centering: {
-    flex: 1,
-    alignItems: "center",
-    justifyContent: "center"
-  }
-});
+const CenteringView = styled.View`
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+`;

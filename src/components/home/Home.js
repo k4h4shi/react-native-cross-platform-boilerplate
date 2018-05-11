@@ -1,6 +1,6 @@
 // @flow
 import React, { Component } from "react";
-import { Text } from "react-native";
+import styled from "styled-components/primitives";
 import { Button, CenteringView } from "../../components/common";
 
 type Props = {
@@ -9,9 +9,13 @@ type Props = {
 
 const Home = ({ onPressButton }: Props) => (
   <CenteringView>
-    <Text>Home Screen</Text>
+    <Title>Home Screen</Title>
     <Button title="Show samples" onPress={onPressButton} />
   </CenteringView>
 );
+
+const Title = styled.Text`
+  font-size: 13px;
+`;
 
 export default Home;

@@ -1,5 +1,6 @@
 // @flow
 import React, { Component } from "react";
+import styled from "styled-components/primitives";
 import { StyleSheet, TouchableOpacity, Text } from "react-native";
 
 type Props = {
@@ -8,16 +9,26 @@ type Props = {
 };
 
 export default ({ title, onPress }: Props) => (
-  <TouchableOpacity onPress={onPress} style={styles.button}>
-    <Text style={styles.title}>{title}</Text>
-  </TouchableOpacity>
+  <ButtonContainer onPress={onPress}>
+    <ButtonText>{title}</ButtonText>
+  </ButtonContainer>
 );
 
+const ButtonText = styled.Text`
+  background-color: transparent;
+  border: solid 1.5px black;
+  border-radius: 3px;
+  padding: 6px;
+  color: black;
+`;
+
+const ButtonContainer = styled.Touchable`
+  align-items: center;
+  justify-content: center;
+`;
+
 const styles = StyleSheet.create({
-  button: {
-    alignItems: "center",
-    justifyContent: "center"
-  },
+  button: {},
   title: {
     backgroundColor: "transparent",
     borderStyle: "solid",

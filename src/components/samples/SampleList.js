@@ -1,5 +1,6 @@
 // @flow
 import React, { Component } from "react";
+import styled from "styled-components/primitives";
 import { StyleSheet, View, Text } from "react-native";
 
 type Props = {|
@@ -12,22 +13,21 @@ type Props = {|
 
 const SampleList = ({ samples }: Props) =>
   samples.map(sample => (
-    <View style={styles.container} key={sample.id}>
-      <Text>id: {sample.id}</Text>
-      <Text>title: {sample.title}</Text>
-      <Text>description: {sample.description}</Text>
-    </View>
+    <Container key={sample.id}>
+      <Propaty>id: {sample.id}</Propaty>
+      <Propaty>title: {sample.title}</Propaty>
+      <Propaty>description: {sample.description}</Propaty>
+    </Container>
   ));
 
-const styles = StyleSheet.create({
-  container: {
-    margin: 5,
-    borderStyle: "solid",
-    borderColor: "black",
-    borderRadius: 3,
-    borderWidth: 1.5,
-    padding: 6
-  }
-});
+const Container = styled.View`
+  margin: 5px;
+  border: solid 1.5px black;
+  border-radius: 3px;
+  border-width: 1.5px;
+  padding: 6px;
+`;
+
+const Propaty = styled.Text``;
 
 export default SampleList;
