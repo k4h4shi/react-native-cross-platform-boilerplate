@@ -11,7 +11,7 @@
 
 * [React](https://reactjs.org/)
 * [React Native](https://facebook.github.io/react-native/)
-* [React Navigation](https://reactnavigation.org/docs/en/navigation-prop.html)
+* [React Router](https://reacttraining.com/react-router/)
 * [Flow](https://flow.org/)
 * [Jest](https://facebook.github.io/jest/)
 * [styled components](https://www.styled-components.com/)
